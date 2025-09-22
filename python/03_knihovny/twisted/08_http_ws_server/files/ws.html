@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>WebSocket Client</h1>
+    <p>Check the console for messages.</p>
+
+    <ul id="messages"></ul>
+
+    <form>
+      <label>
+        Message:
+        <input type="text" />
+      </label>
+      <button type="submit">Send</button>
+    </form>
+
+    <script type="module">
+      const messagesBox = document.querySelector("#messages");
+
+      const form = document.querySelector("form");
+      const input = form.querySelector("input");
+
+      const url = "ws://localhost:1234";
+      const ws = new WebSocket(url);
+
+      ws.onerror = (event) => {
+        console.log("Error:", event);
+      };
+
+      ws.onopen = () => {
+        console.log("Connected to the server");
+      };
+
+      ws.onclose = (event) => {
+        console.log("Connection closed:", event.reason);
+      };
+
+      ws.onmessage = (event) => {
+        console.log("Message received:", event.data);
+        const li = document.createElement("li");
+        li.textContent = event.data;
+        messagesBox.appendChild(li);
+      };
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const message = input.value;
+        ws.send(message);
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>

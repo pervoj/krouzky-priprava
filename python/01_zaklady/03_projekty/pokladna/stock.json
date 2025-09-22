@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "rohl\u00edk sv\u011btl\u00fd",
+    "quantity_unit": "ks",
+    "price_per_unit": 2.9,
+    "quantity": 186
+  },
+  {
+    "id": 2,
+    "name": "m\u00e1slo (250 g)",
+    "quantity_unit": "ks",
+    "price_per_unit": 79.9,
+    "quantity": 87
+  },
+  {
+    "id": 3,
+    "name": "pomeran\u010de",
+    "quantity_unit": "kg",
+    "price_per_unit": 49.9,
+    "quantity": 20
+  }
+]

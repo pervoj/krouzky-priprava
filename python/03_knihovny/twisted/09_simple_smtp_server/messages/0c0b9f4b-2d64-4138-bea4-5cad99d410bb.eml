@@ -1,0 +1,15 @@
+Received: localhost
+Message-ID: <d171dcde-4803-4144-bfb8-1a414187dda2@test.com>
+Date: Wed, 21 May 2025 17:04:28 +0200
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: hello@pervoj.cz
+From: =?UTF-8?Q?Vojt=C4=9Bch_Pern=C3=ADk?= <user1@test.com>
+Subject: Test
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Ahoj!
+
+Toto je testovací email!

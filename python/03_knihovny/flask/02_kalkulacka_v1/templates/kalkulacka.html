@@ -1,0 +1,27 @@
+<!-- https://jinja.palletsprojects.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form method="GET">
+      <input type="number" name="prvni_cislo" value="{{ prvni_cislo }}" />
+      <select name="operator">
+        {% for operator in operators %}
+          <option
+            value="{{ operator }}"
+            {% if selected_operator == operator %}selected{% endif %}
+          >
+            {{ operator }}
+          </option>
+        {% endfor %}
+      </select>
+      <input type="number" name="druhe_cislo" value="{{ druhe_cislo }}" />
+      <input type="submit" />
+    </form>
+    <hr />
+    Výsledek: {{ vysledek }}
+  </body>
+</html>
