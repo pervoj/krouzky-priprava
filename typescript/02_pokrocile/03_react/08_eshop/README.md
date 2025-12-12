@@ -1,0 +1,6 @@
+- https://docs.convex.dev/quickstart/nextjs
+- https://env.t3.gg/docs/nextjs
+- https://ui.shadcn.com/docs/installation/next
+- https://currency.js.org/
+- https://docs.convex.dev/auth/clerk#nextjs
+- https://ui.shadcn.com/docs/forms/tanstack-form#form

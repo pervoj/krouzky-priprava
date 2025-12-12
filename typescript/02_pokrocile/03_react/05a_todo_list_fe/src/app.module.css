@@ -1,0 +1,63 @@
+.wrapper {
+  margin-inline: auto;
+  max-width: 60ch;
+  width: 100%;
+
+  display: grid;
+  gap: 2rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 0;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+
+  input,
+  button {
+    appearance: none;
+    border: 1px solid #555555;
+    background-color: #222222;
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem;
+    border-radius: 0.5rem;
+  }
+
+  input {
+    flex-grow: 1;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  gap: 0.5rem;
+}
+
+.todo {
+  border: 1px solid #555555;
+  background-color: #222222;
+  padding-block: 0.5rem;
+  padding-inline: 0.75rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
